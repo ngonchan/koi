@@ -1,0 +1,62 @@
+h1. Setup
+
+* Macbook Pro 5.2
+* Intel Core 2 Duo 2.8Ghz
+* 4 GB DDR3 1667Mhz
+* 500GB 5400 RPM
+* Apache 2 via MAMP
+
+h2. Command:
+
+@$ ab -t 30 -c 10 http://localhost/php/koi/example/@
+
+h2. Results
+
+bc.. This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 5000 requests
+Completed 10000 requests
+Completed 15000 requests
+Completed 20000 requests
+Finished 24964 requests
+
+
+Server Software:        Apache
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /php/koi/example/
+Document Length:        13 bytes
+
+Concurrency Level:      10
+Time taken for tests:   30.001 seconds
+Complete requests:      24964
+Failed requests:        0
+Write errors:           0
+Total transferred:      4843792 bytes
+HTML transferred:       324584 bytes
+Requests per second:    832.12 [#/sec] (mean)
+Time per request:       12.018 [ms] (mean)
+Time per request:       1.202 [ms] (mean, across all concurrent requests)
+Transfer rate:          157.67 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   1.5      0      15
+Processing:     2   11  21.9      7     392
+Waiting:        0   10  21.1      6     392
+Total:          2   12  22.0      7     392
+
+Percentage of the requests served within a certain time (ms)
+  50%      7
+  66%      9
+  75%     10
+  80%     11
+  90%     15
+  95%     32
+  98%     85
+  99%    130
+ 100%    392 (longest request)
