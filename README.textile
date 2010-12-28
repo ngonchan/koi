@@ -1,0 +1,50 @@
+h2. Koi
+
+Koi is a unique microframework written in PHP 5.3. Unlike most frameworks these days Koi isn't
+a half-finished port of an existing framework (yes, I'm talking about all Sinatra forks in PHP).
+Instead Koi provides features that take advantage of PHP, provides unlimited features and is
+_very_ fast. Koi has the following features:
+
+* Use the same code for both web and commandline applications
+* Very good performance, the average "Hello, world" benchmark (as unrealistic as it is) executes
+in about 800 requests/sec.
+* Support for any template engine. Out of the box Koi supports plain PHP, Dwoo and Mustache.
+It's also very easy to add your own driver.
+* No MVC or any other pattern, your free to choose whatever structure you like. This makes Koi very
+easy to use as a base for your own framework.
+
+More information will be added soon on the Github page for Koi.
+
+h2. Basic Usage
+
+Using Koi is piss easy and only requires 1 file at least.
+
+bc.. <?php
+require_once 'path/to/koi/lib/koi.php';
+
+class MyApplication extends Koi\Application
+{
+  public function example_method()
+  {
+    return "Hello, world!";
+  }
+}
+
+$app = new MyApplication();
+
+$app->map('/', 'example_method');
+$app->run();
+
+h2. Requirements
+
+The only requirement of Koi is PHP 5.3. That's right, PHP 5.3 Koi uses interfaces, namespaces
+and a few other elements provided by PHP 5.3.
+
+h2. Installation
+
+Installing Koi is super easy. You can either manually download it or use Git. After downloading
+the files all you have to do is to require the file "koi.php" found in lib/koi.php.
+
+h2. License
+
+Koi is licensed under the MIT license, a copy of this license can be found in the file "LICENSE".

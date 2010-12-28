@@ -1,0 +1,5 @@
+.DS_Store
+Koi.komodoproject
+lib/koi/libraries/view/vendor/dwoo/compiled/*.php
+test/config/apps.php
+test/libraries/log/logs/*
