@@ -139,11 +139,11 @@ class Application
 		}
 		
 		// Set the PATH_INFO based on the CLI arguments.
-		if ( !defined('KOI_DEBUG') != TRUE AND PHP_SAPI === 'cli' )
+		if ( defined('KOI_DEBUG') != TRUE AND PHP_SAPI === 'cli' )
 		{
 			$_SERVER['PATH_INFO'] = CLI::uri();
 		}
-		
+	
 		// Route the call
 		$result = Router::route($this->mappings);
 

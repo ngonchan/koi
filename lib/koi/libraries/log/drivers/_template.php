@@ -56,16 +56,4 @@ class _Template implements LogInterface
 	{
 		
 	}
-	
-	/**
-	 * The destroy method can be used to remove the log data.
-	 *
-	 *
-	 * @author Yorick Peterse
-	 * @return bool
-	 */
-	public function destroy()
-	{
-		
-	}
 }
