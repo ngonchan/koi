@@ -1,4 +1,4 @@
-h2. Koi
+h1. Koi
 
 Koi is a unique microframework written in PHP 5.3. Unlike most frameworks these days Koi isn't
 a half-finished port of an existing framework (yes, I'm talking about all Sinatra forks in PHP).

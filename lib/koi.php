@@ -10,7 +10,7 @@
  * * Work with a very easy to use framework ;)
  * * Easily build your own framework (MVC or not)
  * * Render a view using HAML, HTML, Smarty, etc
- * * Easily work with cookies, session, log files, etc
+ * * Easily work with cookies, sessions, log files, etc
  *
  * @author  Yorick Peterse
  * @link    http://yorickpeterse.com/
